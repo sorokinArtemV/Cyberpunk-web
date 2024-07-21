@@ -1,0 +1,34 @@
+.container {
+  //max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  //margin-inline: auto;
+  //padding-inline: var(--container-padding-x);
+  max-width: 1480px;
+  margin-inline: auto;
+  padding-inline: 36px;
+
+  @media (max-width: 700px) {
+    padding-inline: 0;
+  }
+}
+
+.container-small {
+  max-width: 1280px;
+  margin-inline: auto;
+
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}

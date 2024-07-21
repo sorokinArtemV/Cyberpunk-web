@@ -1,0 +1,18 @@
+.button-cta {
+  @include flex-center(true);
+
+  padding-inline: 50px;
+  height: 78px;
+  font-family: "Roboto", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background-color: var(--color-black);
+
+  @media (max-width: 350px) {
+    height: 60px;
+    font-size: 20px;
+    padding-inline: 38px;
+    width: 244px;
+  }
+}
